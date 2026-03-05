@@ -20,3 +20,25 @@ Install all required libraries (such as `recharts`, `lucide-react`, `framer-moti
 
 ```bash
 npm install
+
+## Running in Development Mode
+
+To run the application locally for development or testing:
+
+```bash
+npm run dev
+
+By default, Vite will start the development server at:
+
+http://localhost:5173
+
+(or port 3000 if configured in vite.config.ts).
+
+## Building for Production
+
+To create an optimized production build:
+
+```bash
+npm run build
+
+This command generates a dist/ folder containing optimized HTML, CSS, and JavaScript files that can be deployed to a web server.
