@@ -1,20 +1,47 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Setup and Deployment
 
-# Run and deploy your AI Studio app
+## Prerequisites
 
-This contains everything you need to run your app locally.
+Ensure you have the following installed on your system:
 
-View your app in AI Studio: https://ai.studio/apps/ac607d5a-a6d1-4d87-8c6b-7fffd7a26f58
+- **Node.js** (version 18 or higher recommended)
+- **npm** (comes with Node.js) or **yarn**
 
-## Run Locally
+## Prepare the Project
 
-**Prerequisites:**  Node.js
+If you have the source code locally:
 
+1. Open a terminal or command prompt.
+2. Navigate to the project's root directory (the directory containing `package.json`).
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Install Dependencies
+
+Install all required libraries (such as `recharts`, `lucide-react`, `framer-motion`, etc.):
+
+```bash
+npm install
+```
+
+## Running in Development Mode
+
+To run the application locally for development or testing:
+
+```bash
+npm run dev
+```
+
+By default, Vite will start the development server at:
+
+http://localhost:5173
+
+(or port 3000 if configured in vite.config.ts).
+
+## Building for Production
+
+To create an optimized production build:
+
+```bash
+npm run build
+```
+
+This command generates a dist/ folder containing optimized HTML, CSS, and JavaScript files that can be deployed to a web server.
