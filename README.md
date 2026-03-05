@@ -19,7 +19,8 @@ If you have the source code locally:
 Install all required libraries (such as `recharts`, `lucide-react`, `framer-motion`, etc.):
 
 ```bash
-npm install```
+npm install
+```
 
 ## Running in Development Mode
 
@@ -27,6 +28,7 @@ To run the application locally for development or testing:
 
 ```bash
 npm run dev
+```
 
 By default, Vite will start the development server at:
 
@@ -40,5 +42,6 @@ To create an optimized production build:
 
 ```bash
 npm run build
+```
 
 This command generates a dist/ folder containing optimized HTML, CSS, and JavaScript files that can be deployed to a web server.
