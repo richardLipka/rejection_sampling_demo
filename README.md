@@ -19,7 +19,7 @@ If you have the source code locally:
 Install all required libraries (such as `recharts`, `lucide-react`, `framer-motion`, etc.):
 
 ```bash
-npm install
+npm install```
 
 ## Running in Development Mode
 
