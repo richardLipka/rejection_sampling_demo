@@ -1,0 +1,5 @@
+{
+  "name": "Rejection sampler",
+  "description": "Visualize the Rejection Sampling method for generating random variables from various distributions.",
+  "requestFramePermissions": []
+}
