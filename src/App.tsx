@@ -472,13 +472,13 @@ export default function App() {
                   onClick={() => setLang('en')}
                   className={`px-3 py-1 rounded-lg text-xs font-bold transition-all ${lang === 'en' ? 'bg-blue-600 text-white shadow-sm' : 'text-slate-500 hover:bg-slate-50'}`}
                 >
-                  🇺🇸 EN
+                  en
                 </button>
                 <button 
                   onClick={() => setLang('cs')}
                   className={`px-3 py-1 rounded-lg text-xs font-bold transition-all ${lang === 'cs' ? 'bg-blue-600 text-white shadow-sm' : 'text-slate-500 hover:bg-slate-50'}`}
                 >
-                  🇨🇿 CS
+                  cz
                 </button>
               </div>
             </div>
