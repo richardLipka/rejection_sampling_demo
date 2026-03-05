@@ -299,6 +299,10 @@ const Translations = {
   }
 };
 
+const config = {
+  loader: { load: ['input/tex', 'output/chtml'] }, 
+};
+
 // --- Main Component ---
 export default function App() {
   const [lang, setLang] = useState<'en' | 'cs'>('en');
@@ -453,7 +457,7 @@ export default function App() {
   }, [samples, selectedDist, currentParams, selectedDistId]);
 
   return (
-    <MathJaxContext>
+    <MathJaxContext version={3} config={config}>
       <div className="min-h-screen bg-slate-50 text-slate-900 font-sans p-4 md:p-8">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
@@ -913,19 +917,19 @@ export default function App() {
                       <div>
                         <h3 className="text-[10px] font-bold text-blue-400 uppercase tracking-widest mb-1">{t('pdfLabel')}</h3>
                         <div className="bg-blue-50 p-3 rounded-xl border border-blue-100 font-mono text-xs text-blue-900 break-words">
-                          <MathJax>{"\\(" + selectedDist.formulas.pdf(currentParams) + "\\)"}</MathJax>
+                          <MathJax dynamic inline>{"\\(" + selectedDist.formulas.pdf(currentParams) + "\\)"}</MathJax>
                         </div>
                       </div>
                       <div>
                         <h3 className="text-[10px] font-bold text-blue-400 uppercase tracking-widest mb-1">{t('meanLabel')}</h3>
                         <div className="bg-blue-50 p-3 rounded-xl border border-blue-100 font-mono text-xs text-blue-900 break-words">
-                          <MathJax>{"\\(" + selectedDist.formulas.mean(currentParams) + "\\)"}</MathJax>
+                          <MathJax dynamic inline>{"\\(" + selectedDist.formulas.mean(currentParams) + "\\)"}</MathJax>
                         </div>
                       </div>
                       <div>
                         <h3 className="text-[10px] font-bold text-blue-400 uppercase tracking-widest mb-1">{t('varianceLabel')}</h3>
                         <div className="bg-blue-50 p-3 rounded-xl border border-blue-100 font-mono text-xs text-blue-900 break-words">
-                          <MathJax>{"\\(" + selectedDist.formulas.variance(currentParams) + "\\)"}</MathJax>
+                          <MathJax dynamic inline>{"\\(" + selectedDist.formulas.variance(currentParams) + "\\)"}</MathJax>
                         </div>
                       </div>
                     </div>
